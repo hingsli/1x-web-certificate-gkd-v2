@@ -15,8 +15,23 @@
     <a href="https://github.com/hingsli/1x-web-certificate-gkd-v2">1+X Web证书培训</a>
   </nav>
   <div id="app"></div>
-</body>
 
+  <script>
+    window.$docsify = {
+      name: '1+X Web证书培训',
+      repo: 'https://github.com/hingsli/1x-web-certificate-gkd-v2.git',
+      loadNavbar: true,
+      loadSidebar: true,
+      coverpage: true,
+      onlyCover: true,
+      subMaxLevel: 3 // Adjust this to include H1, H2, H3
+    };
+  </script>
+ 
+<!--   bash高亮支持 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<!--   git 代码修改的高亮支持 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-diff.js"></script>
 <!-- cdn:cdn.jsdelivr.net在大陆可能不可用,换成fastly.jsdelivr.net好一点 -->
 <script>
   window.$docsify = {
@@ -68,5 +83,6 @@
 
 <!-- 代码高亮 -->
 <script src="https://fastly.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+</body>
 
 </html>
