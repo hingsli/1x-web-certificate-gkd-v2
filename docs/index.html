@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>1+X Web证书培训</title>
@@ -8,20 +9,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
+  <nav>
+    <a href="https://github.com/hingsli/1x-web-certificate-gkd-v2">1+X Web证书培训</a>
+  </nav>
   <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '1+X Web证书培训',
-      repo: 'https://github.com/hingsli/1x-web-certificate-gkd-v2.git',
-      loadNavbar: true,
-      loadSidebar: true,
-      coverpage: true,
-      onlyCover: true,
-      subMaxLevel: 3 // Adjust this to include H1, H2, H3
-    };
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
+
+<!-- cdn:cdn.jsdelivr.net在大陆可能不可用,换成fastly.jsdelivr.net好一点 -->
+<script>
+  window.$docsify = {
+    name: '1+X Web证书培训',
+    repo: 'https://github.com/hingsli/1x-web-certificate-gkd-v2.git',
+    loadNavbar: true,
+    loadSidebar: true,
+    coverpage: true,
+    onlyCover: true,
+    subMaxLevel: 3 // Adjust this to include H1, H2, H3
+  };
+</script>
+<!-- Docsify v4 -->
+<!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+<script src="https://fastly.jsdelivr.net/npm/docsify@4"></script>
+
+<!-- 全文搜索 -->
+<script>
+  window.$docsify = {
+    search: {
+      paths: 'auto',
+      placeholder: '搜索',
+      noData: '找不到结果',
+      depth: 3,
+    },
+  }
+</script>
+<script src="https://fastly.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+<!-- 图片缩放 -->
+<script src="https://fastly.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<!-- 在所有代码块上添加一个简单的复制code按钮 -->
+<script src="https://fastly.jsdelivr.net/npm/docsify-copy-code"></script>
+
+<!-- 字数统计 -->
+<script>
+  window.$docsify = {
+    count: {
+      countable: true,
+      fontsize: '0.9em',
+      color: 'rgb(90,90,90)',
+      language: 'chinese'
+    }
+  }
+</script>
+<script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+
+
+<!-- 代码高亮 -->
+<script src="https://fastly.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
+
 </html>
