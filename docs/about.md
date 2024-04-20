@@ -46,3 +46,14 @@
 
 - 将图片和其他媒体文件放置在相应的目录下，并确保在Markdown文件中正确引用。
 - 对于大量的图片，建议压缩后上传，以优化加载速度和浏览体验。
+
+
+```mermaid
+
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+```
