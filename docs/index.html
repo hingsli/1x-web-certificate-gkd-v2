@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 </head>
 <body>
   <nav>
@@ -14,7 +15,7 @@
   </nav>
   <div id="app"></div>
 
-  <script src="//fastly.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//fastly.jsdelivr.net/npm/docsify@4"></script> 
   <script>
     window.$docsify = {
       name: '1+X Web证书培训',
@@ -35,9 +36,13 @@
         fontsize: '0.9em',
         color: 'rgb(90,90,90)',
         language: 'chinese'
+      },
+      mermaidConfig: {
+        querySelector: ".mermaid"
       }
     };
-  </script>
+</script>
+<script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 
   <!--   bash高亮支持 -->
   <script src="//fastly.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
@@ -48,10 +53,19 @@
   <!-- 图片缩放 -->
   <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- 在所有代码块上添加一个简单的复制code按钮 -->
-  <script src="//fastly.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//fastly.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- 代码高亮 -->
   <script src="//fastly.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
   <!-- 字数统计 -->
   <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 引入 PrismJS，用于 PHP 语法高亮显示 -->
+  <script src="//fastly.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 </body>
 </html>
