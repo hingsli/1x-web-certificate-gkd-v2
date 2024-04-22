@@ -1,0 +1,2 @@
+- [PHP项目 根据需要推荐书籍](student-projects/php-project-bookRecommendations.md)
+- [个人财务管理APP](student-projects/php-project-personal-financial-tracker.md)

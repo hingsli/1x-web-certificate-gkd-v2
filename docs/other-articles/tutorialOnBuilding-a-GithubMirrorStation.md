@@ -1,10 +1,3 @@
----
-
-layout: post
-title: "如何搭建自己的GitHub镜像站"
-date: 2024-04-16 20:30:14 -0700
-categories: php
----
 
 > 作者:21级计算机应用本科3班 谢垒涵
 # Github镜像站搭建教程
