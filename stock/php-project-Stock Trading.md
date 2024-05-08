@@ -1,4 +1,3 @@
-> **作者：** 21计算机应用工程本科1班 李博为  
 > **GitHub:** [https://github.com/ChalleNgerOvO]  
 > **项目地址:** [https://github.com/ChalleNgerOvO/php-project]
 
@@ -122,9 +121,10 @@
 
 **步骤：**
 1. 在Apache的`htdocs`文件夹中创建一个名为`stock`的新文件夹。
-![Apache文件夹](https://i.imgur.com/da2bFfw.png)
-1. 在`stock`文件夹中创建初始的PHP文件`index.php`以及其他所需的PHP脚本文件和资源文件夹。
-![PHP文件](https://i.imgur.com/KxpRH4G.png)
+![Imgur](https://i.imgur.com/fKfiON3.png)
+2. 在`stock`文件夹中创建初始的PHP文件`index.php`以及其他所需的PHP脚本文件和资源文件夹。
+![Imgur](https://i.imgur.com/YNCyctd.png)
+
 
 ### 1.2启动服务器
 
@@ -132,14 +132,16 @@
 1. 确保Apache服务器已安装并配置正确，MySQL数据库也已启动。
 ![Apache服务器](https://i.imgur.com/6sgOWu9.png)
 2. 通过浏览器访问`http://localhost/stock/index.php`检查项目首页，确认配置无误。
-![项目首页](https://i.imgur.com/6c6qPKa.png)
+![Imgur](https://i.imgur.com/OYephLi.png)
 
 ### 1.3创建数据库和表
 
 **步骤：**
 1. 打开phpmyadmin，检查数据库服务器：`http://localhost/phpmyadmin/`
 2. 创建名为`stock_tranding`的数据库，并选择它。执行以下SQL语句：
-   ![创建数据库](https://i.imgur.com/KAAXZEJ.png)
+![Imgur](https://i.imgur.com/eqjWggu.png)
+
+
 
 ```sql
 -- 创建新数据库
