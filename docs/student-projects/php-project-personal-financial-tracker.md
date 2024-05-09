@@ -1,5 +1,6 @@
 
->**作者：** 21计算机应用工程本科1班 彭嘉楠
+>**作者：@Palpatine0
+
 > 
 > **github:** https://github.com/Palpatine0
 
